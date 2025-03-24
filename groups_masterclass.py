@@ -1,9 +1,18 @@
-# Input groups number
+# This file creates the PDF document with the masterclass groups' information. To use it, check on CIMA
+# what groups are available for the masterclass version, input below the groups (5, 10, 25, 50, or 100),
+# and the starting and ending numbers available for each group. Also, put the masterclass version and location
+# to complete the masterclass information.
+
+# Input groups' number
 groups = [100,25,50]
 
 # Input start and end numbers for each group above
 starting_numbers = [1,1,1]
 ending_numbers = [49,25,49]
+
+# Change these to show the correct event and location names as in CIMA
+masterclass = "CERN-25Mar2025"
+location = "SaoPaoloSprace-25mar25"
 
 # If tens (10, 20, 30, etc.) need to be skipped, set this as True; True is usually the default
 skip_tens = True
@@ -12,10 +21,6 @@ skip_tens = True
 # example: if 2 and 4, and 1 and 3 are to be skipped in the first and third groups defined above,
 # put [[2,4],[],[1,3]]
 numbers_to_skip = []
-
-# Change these to show the correct event and location names as in CIMA
-masterclass = "CERN-25Mar2025"
-location = "SaoPaoloSprace-25mar25"
 
 # Auxiliary integer to count every 9 groups, just to fill an A4 correctly
 # and make it easier to cut the paper
